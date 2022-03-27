@@ -12,7 +12,7 @@ function getRandomAdvice(e) {
     .then((res) => res.json())
     .then((data) => {
       adviceNumber.innerHTML = `Advice #${data.slip.id}`;
-      quote.innerHTML = `"${data.slip.advice}"`;
+      quote.innerHTML = `${data.slip.advice}`;
     });
 }
 
